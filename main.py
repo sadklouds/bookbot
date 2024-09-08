@@ -30,9 +30,9 @@ def char_dictionary(text):
 def sort_on(dict):
     return dict["num"]
 
-def report(word_count,char_count):
+def report(word_count,char_dict):
     dict_list = []
-    for char, count in char_count.items():
+    for char, count in char_dict.items():
         if char.isalpha():
             dict_list.append({"char":char, "num":count})
 
